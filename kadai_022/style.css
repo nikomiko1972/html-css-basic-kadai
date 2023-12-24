@@ -39,14 +39,9 @@ main{
   content: "●";
   color: rgb(239,111,139);
 }
-@media screen and (max-width: 768px){
-  h2{font-size: 30px;}
-  p{font-size: 25px;}
-  #parent{display: block;}
-}
 .contents p:nth-of-type(2)::first-letter{
+  color: rgb(97, 206, 249);
   font-weight: bold
-  color: rgb(97,206,249);
 }
 img{margin: 10px 0px;
 width: 70%;}
@@ -62,4 +57,9 @@ a:hover{
 }
 a:visited{
   color: rgb(193,234,251);
+}
+@media screen and (max-width: 768px){
+  h2{font-size: 30px;}
+  p{font-size: 25px;}
+  #parent{display: block;}
 }
