@@ -7,8 +7,7 @@ for(let i=0; i<=15; i+=1){
 
 //whileを使った場合
 holidaysName.length;
-let n=0
-console.log(holidaysName[n]);
+let n= -1
 while(n<=15){
   n=n+=1;
   console.log(holidaysName[n]);
