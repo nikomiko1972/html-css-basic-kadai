@@ -132,6 +132,6 @@ PC用のスタイル
     font-size: 16px;
     background-image: url("images/arrow.png");
     background-repeat: no-repeat;
-    background-position: right-top;
+    background-position: right top;
   }
 }
