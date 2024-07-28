@@ -1,0 +1,26 @@
+body{
+  max-width: 1080px;
+  margin: 0 auto 0 auto;
+}
+#coment{
+  font-weight: bold;
+  line-height: 100%;
+  font-size: 110%;
+  text-align: center;
+  margin: 5px 10px 50px 10px;
+}
+.contents_1{
+  background-color: cornsilk;
+  margin : 20px 10px 10px 10px;
+  padding : 30px 30px 20px 30px;
+}
+.contents_2{
+  background-color: #e0fce2;
+  margin : 20px 10px 10px 10px;
+  padding : 30px 30px 20px 30px;
+}
+.imagephoto{
+  display: flex;
+  justify-content: space-between;
+  margin: 50px 5px 5px 5px;
+}
