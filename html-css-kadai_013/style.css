@@ -91,12 +91,6 @@ PC用のスタイル
     display: none;
     z-index:100
   }
-  #nav-sp ul{
-    padding-left:none;
-  }
-  #nav-sp li{
-    list-style:none;
-  }
   #close{
     position: absolute;
     top:20px;
