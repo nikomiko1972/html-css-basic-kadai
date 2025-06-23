@@ -1,0 +1,356 @@
+body{
+  max-width: 1500px;
+  margin: 0 auto 0 auto;
+}
+
+#toptitle{
+  position: relative; 
+  z-index: -110;
+}
+
+#toptitle img{
+  width: 100%; 
+  position: relative;
+  z-index: -111;
+}
+/* ナビゲーションメニュー */
+
+.index_top_image img{
+  width: 300px;
+  padding: 20px;
+}
+
+.gnavi__wrap {
+  width: 1200px;
+  margin: 0 auto;
+}
+.gnavi__lists {
+  display: flex;
+}
+.gnavi__list {
+  width: 20%;
+  height: 60px;
+  background-color: #E5F0F8;
+  position: relative;
+  z-index: 1000;
+  transition: all .3s;
+  list-style: none;
+}
+.gnavi__list:hover {
+  background-color: #0071BB;
+}
+.gnavi__list:not(:first-child)::before {
+  content: "";
+  width: 1px;
+  height: 100%;
+  background-color: #fff;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: all .3s;
+}
+.gnavi__list:hover::before {
+  background-color: #0071BB;
+}
+.gnavi__list a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  text-decoration: none;
+  color: #1b4059;
+  font-size: 15px;
+  letter-spacing: 0.05em;
+  font-weight: 600;
+  transition: all .3s;
+}
+.gnavi__list:hover a {
+  color: #fff;
+}
+.dropdown__lists {
+  display: none;/*デフォルトでは非表示の状態にしておく*/
+  width: 100%;
+  position: absolute;
+  top: 60px;
+  left: 0;
+  padding-left: 0;
+  z-index: 2000;
+}
+.gnavi__list:hover .dropdown__lists {
+  display: block;/*Gナビメニューにホバーしたら表示*/
+}
+.dropdown__list {
+  background-color: #004d80;
+  height: 60px;
+  transition: all .3s;
+  position: relative;
+  list-style: none;
+}
+.dropdown__list:not(:first-child)::before{
+  content: "";
+  width: 100%;
+  height: 1px;
+  background-color: #3492d1;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.dropdown__list:hover {
+  background-color: #003558;
+}
+.dropdown__list a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  text-decoration: none;
+  position: relative;
+}
+.dropdown__list a::before {
+  content: '';
+  display: none;
+  width: 6px;
+  height: 6px;
+  border-top: 2px solid #fff;
+  border-left: 2px solid #fff;
+  transform: rotate(135deg);
+  position: absolute;
+  right: 15px;
+  top: calc(50% - 5px);
+}
+.header_image_gnavi{
+  display: flex;
+}
+
+#mypic{
+  width: 100%;
+  height: 100%;
+}
+header{
+  position: sticky;
+  top: 0;
+  background-color: #fff;
+}
+.fonttitle h1{
+  display: inline;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  font-size: 80px;
+  color: yellow;
+  margin: 0 30px 2px 0;
+  z-index: -109;
+}
+
+/* 食育文字 */
+.fonttitle h1{
+  display: inline;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  font-size: 80px;
+  color: yellow;
+  margin: 0 30px 2px 0;
+  z-index: -110;
+}
+
+/* 3行の文章 */
+.coment{
+  font-weight: bold;
+  font-size: 120%;
+  text-align: center;
+  margin: 80px 10px 100px 10px;
+}
+
+/* 枠内文字 */
+.title_1{
+  display: inline-block;
+  padding: 15px 30px 15px 30px;
+  margin: 0 20px 0 20px;
+  border: solid;
+  border-width: 4px;
+  border-color: orange;
+  background-color: #ffffff;
+  position: relative;
+  top: -30px;
+  left:20px;
+  z-index: -103;
+}
+.title_2{
+  display: inline-block;
+  padding: 15px 30px 15px 30px;
+  margin: 0 20px 0 20px;
+  border: solid;
+  border-width: 4px;
+  border-color: green;
+  background-color: #ffffff;
+  position: relative;
+  top: -30px;
+  left:20px;
+}
+
+/* 内容の背景 */
+.contents_1{
+  background-color: cornsilk;
+  margin : 60px 10px 10px 10px;
+  padding : 0 30px 20px 30px;
+  position: relative;
+  z-index: -90;
+}
+.contents_2{
+  background-color: #e0fce2;
+  margin : 60px 10px 10px 10px;
+  padding : 0 30px 20px 30px;
+  position: relative;
+  z-index: -90;
+}
+
+.list li::first-line{
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.list li{
+  margin-bottom: 15px;
+}
+/* 各説明内の画像 */
+.imagephoto{
+  display: flex;
+  justify-content: space-between;
+  margin: 50px 5px 5px 5px;
+}
+.imagephoto > img{
+  width: 30%;
+}
+
+.yasaiimg img{
+  width: 120px;
+}
+.contents_in{
+  display: flex;
+}
+
+.consept{
+  width: 70%;
+}
+
+#piman{
+  position: relative;
+  top: -50px;
+  z-index: -98;
+}
+
+#toumorokosi{
+  position: relative;
+  top: -30px;
+  margin-left: 20px;
+}
+
+#sakana{
+  position: relative;
+  top: -20px;
+}
+#udon{
+  position: relative;
+  top: 50px;
+  margin-left: 30px;
+}
+
+  /*先生紹介のページ内容*/
+.t_top_team{
+  margin-bottom: 70px;
+  position: relative;
+  z-index: -90;
+}
+
+.t_top p{
+  font-size: 28px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.t_top_team_photo img{
+  width: 700px;
+  z-index: 8;
+  margin-top: 50px;
+  position: relative;
+  z-index: 1;
+} 
+.t_top_team_photo{
+  text-align: center;
+}
+
+.t_top_team_label{
+  position: absolute;
+  left: 200px;
+  z-index: 2;
+}
+.t_top_team_label img{
+  width: 400px;
+}
+
+.t_top_team_pmessage, .t_top_team_gmessage, .t_top_team_pumessage{
+  width: 660px;
+  border-radius: 15px;
+  margin: 20px auto 10px auto;
+  padding: 20px;
+}
+.t_top_team_pmessage{
+  background-color: #ffc0cb;
+}
+.t_top_team_gmessage{
+  background-color: rgb(214, 242, 214);
+}
+.t_top_team_pumessage{
+  background-color: lavender;
+}
+
+/*先生紹介のページ内容*/
+.t_top_team{
+  margin-bottom: 70px;
+  position: relative;
+  z-index: -90;
+}
+
+.t_top p{
+  font-size: 28px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.t_top_team_photo img{
+  width: 700px;
+  z-index: 8;
+  margin-top: 50px;
+  position: relative;
+  z-index: 1;
+} 
+.t_top_team_photo{
+  text-align: center;
+}
+
+.t_top_team_label{
+  position: absolute;
+  left: 200px;
+  z-index: 2;
+}
+.t_top_team_label img{
+  width: 400px;
+}
+
+.t_top_team_pmessage, .t_top_team_gmessage, .t_top_team_pumessage{
+  width: 660px;
+  border-radius: 15px;
+  margin: 20px auto 10px auto;
+  padding: 20px;
+}
+.t_top_team_pmessage{
+  background-color: #ffc0cb;
+}
+.t_top_team_gmessage{
+  background-color: rgb(214, 242, 214);
+}
+.t_top_team_pumessage{
+  background-color: lavender;
+}
